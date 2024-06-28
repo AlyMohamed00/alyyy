@@ -1,0 +1,113 @@
+/* global styles */
+:root {
+    --orange: #f4623a;
+}
+
+
+/* header slyles start */
+header {
+    background-image: url(../img/bg-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(87 66 54 / 83%);
+}
+header .navbar-brand {
+    color: #ddd;
+}
+header .navbar-nav .nav-item .nav-link:not(.active) {
+    padding: 20px;
+    color: #ddd;
+}
+header .navbar-nav .nav-item .active {
+    padding: 20px;
+    color: var(--orange);
+}
+header .navbar-nav .nav-item .nav-link:not(.active):hover,
+header .navbar-brand:hover {
+    color: #fff;
+}
+header .btn.lang {
+    border: 1px solid var(--orange);
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 10px 15px;
+    color: var(--orange);
+
+}
+header .lang:hover {
+    background-color: #fff;
+}
+
+header .landing {
+    height: 500px;
+}
+
+header .landing .main-title {
+    width: 700px;
+    color: #fff;
+
+}
+header .landing .main-title::after {
+    content: "";
+    width: 70px;
+    height: 0.2rem;
+    background-color: var(--orange);
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+} 
+header .landing p {
+    width: 600px;
+    color: #fff;
+}
+header .landing .btn {
+    background-color: var(--orange);
+    padding: 15px 20px;
+    color: #fff;
+}
+header .landing .btn:hover {
+    background-color: orangered;
+}
+
+/*   ABOUT styles   */
+.about {
+    background-color: var(--orange);
+}
+.about .container {
+    padding: 100px 0px;
+}
+.about .container .main-title {
+    width: 700px;
+    color: #fff;
+
+}
+.about .container .main-title::after {
+    content: "";
+    width: 70px;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+} 
+.about .container p {
+    width: 600px;
+    color: #fff;
+}
+.about .container .btn {
+    background-color: #fff;
+    padding: 15px 20px;
+    color: #000;
+}
